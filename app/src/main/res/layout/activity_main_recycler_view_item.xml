@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1E1032"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circular_image_view"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#1E1032"
+            app:civ_border_width="1dp"
+            app:civ_shadow="false"
+            app:civ_shadow_color="#1E1032"
+            app:civ_shadow_radius="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/circular_image_view"
+            app:layout_constraintTop_toTopOf="@+id/circular_image_view" />
+
+        <TextView
+            android:id="@+id/area_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/name_text_view"
+            app:layout_constraintStart_toStartOf="@+id/name_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/name_text_view" />
+
+        <TextView
+            android:id="@+id/content_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/name_text_view"
+            app:layout_constraintStart_toStartOf="@+id/area_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/area_text_view" />
+
+        <TextView
+            android:textColor="@color/color_d82576"
+            android:id="@+id/sign_up_count_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/name_text_view"
+            app:layout_constraintStart_toStartOf="@+id/content_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/content_text_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#423A69" />
+</LinearLayout>

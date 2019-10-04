@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LiveEventBusDemo</string>
+    <string name="activity_detail_area">約會地區︰</string>
+    <string name="activity_detail_appointment_count">約會人數︰</string>
+    <string name="activity_detail_sign_up_count">報名人數︰</string>
+</resources>

@@ -113,7 +113,7 @@
       <Placemark>
         <name>Building 42</name>
         <visibility>1</visibility>
-        <styleUrl>#transGreenPoly</styleUrl>
+        <styleUrl>#transGreenPoly2</styleUrl>
         <Polygon>
           <extrude>1</extrude>
           <altitudeMode>relativeToGround</altitudeMode>

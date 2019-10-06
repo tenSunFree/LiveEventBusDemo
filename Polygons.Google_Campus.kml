@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>KmlFile</name>
-    <Style id="transGreenPoly2">
+    <Style id="transGreenPoly">
       <LineStyle>
         <width>1.5</width>
       </LineStyle>
@@ -113,7 +113,7 @@
       <Placemark>
         <name>Building 42</name>
         <visibility>1</visibility>
-        <styleUrl>#transGreenPoly2</styleUrl>
+        <styleUrl>#transGreenPoly</styleUrl>
         <Polygon>
           <extrude>1</extrude>
           <altitudeMode>relativeToGround</altitudeMode>
